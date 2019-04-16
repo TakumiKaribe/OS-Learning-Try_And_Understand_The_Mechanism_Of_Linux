@@ -1,7 +1,9 @@
 FROM ubuntu
-RUN apt-get update \
+
+RUN \
+    apt-get -y update \
+    && apt-get -y install build-essential less gdb \
     && apt-get install -y strace \
-    && apt-get install -y sysstat
-WORKDIR /work
-COPY . .
-ENTRYPOINT ["sh", "cmd.sh"]
+    && apt-get install -y sysstat \
+    && apt-get clean
+
