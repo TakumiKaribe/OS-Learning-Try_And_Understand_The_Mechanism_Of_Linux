@@ -1,3 +1,7 @@
 *
+image_name
+!*/
+.vscode/*
 !*.*
+*.log
 !Dockerfile
