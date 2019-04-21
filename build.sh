@@ -1,2 +1,1 @@
-docker build . -t $1
-
+docker build . -t $(<./image_name)
