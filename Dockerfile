@@ -1,4 +1,5 @@
 FROM ubuntu
+FROM python
 
 RUN apt-get -y update
 RUN \
@@ -7,4 +8,3 @@ RUN \
     strace \
     sysstat \
     && apt-get clean
-
