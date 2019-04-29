@@ -5,3 +5,4 @@ image_name
 !*.*
 *.log
 !Dockerfile
+*.DS_Store
