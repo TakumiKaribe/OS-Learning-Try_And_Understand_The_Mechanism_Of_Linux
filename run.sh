@@ -1,3 +1,5 @@
+#!/bin/sh
+
 IMAGE_NAME=$(<./image_name)
 
 if [ -z "$(docker image ls -q $IMAGE_NAME)" ]; then
